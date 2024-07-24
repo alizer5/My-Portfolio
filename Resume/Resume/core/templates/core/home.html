@@ -1,0 +1,47 @@
+{% extends 'core/base.html'%}
+{%load static %}
+{% block content %}
+
+<div class=" mt-5 ">
+    <div class="text-center">
+    <img src="{% static 'core/images/ali-r.png'%}" alt="Profile Picture" class="img-thumbnail" width="250px" height="150px">
+    </div>
+    <div class=" mt-5 text-white mx-5  " >
+        <h1 class="font-weight-bold st-font">
+            Hello,
+        </h1>
+        <div class="px-4" style="line-height:2rem; ">
+        <p style=" text-justify ">
+            I am <b class="text-warning">Ali Zer,</b>  a software engineering graduate passionate about developing innovative solutions
+             to complex problems. With experience in <b class="text-warning">Web development, Web scraping, and Database Management</b>, I have honed my skills
+              through a variety of projects and internships. My journey in technology has been driven by a commitment to learning and
+               growth, and I am eager to bring my expertise to a dynamic team environment.
+
+        <p class=" text-justify">
+
+            I've had the opportunity to work on diverse projects, including Meat Solutions,
+             a platform addressing the global halal meat
+             market using the <b class="text-warning">MERN stack, and 
+            the Daira App, developed with Android Java. </b>
+            I have created a range of desktop applications, such as a Store Management System and a 
+            Hostel Reservation Management System, Additionally, <b class="text-warning">I have strong grip on Python Django Framework</b> develop different apis  showcasing my versatility across different technologies.
+        </p>
+        <p class="text-justify">
+            In my recent internship at <b class="text-warning">AKSA SDS</b>, I gained hands-on experience in Java development, further solidifying my technical foundation. I am also skilled in UI design, demonstrated by my work on the <b  class="text-warning"> BeFit Health App Design,</b> and have a strong grasp of various programming languages, including  Python, C++, Java, and C#.
+
+        </p>
+        <p class="text-justify">
+            I am enthusiastic about leveraging my skills in a professional setting, where I can contribute to meaningful projects and continue to develop as a software engineer. 
+        </p>
+
+         </div>   
+    </div>
+    
+    <div class="text-center">
+        <a href="{% url 'contact'%}" class="btn btn-outline-warning my-3 mr-5">Hire Me</a>
+        <a href="{% url 'contact'%}" class="btn btn-outline-info my-3">Contact</a>
+    </div>
+    
+</div>
+
+{% endblock content %}
